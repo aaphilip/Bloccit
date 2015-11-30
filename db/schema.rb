@@ -42,9 +42,8 @@ ActiveRecord::Schema.define(version: 20151113124800) do
 
   create_table "questions", force: :cascade do |t|
     t.string   "title"
-    t.string   "string"
-    t.string   "body"
-    t.string   "text"
+    t.text     "body"
+    t.boolean  "resolved"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
