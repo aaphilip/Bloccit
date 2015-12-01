@@ -1,7 +1,6 @@
-require 'rails_helper'
-
-RSpec.describe Comment, type: :model do
-  let(:post) { Post.create!(title: "New Post Title", body: "New Post Body") }
+RSpec.describe Comment do
+   pending "add some examples to (or delete) #{__FILE__}"
+   let(:post) { Post.create!(title: "New Post Title", body: "New Post Body") }
    let(:comment) { Comment.create!(body: 'Comment Body', post: post) }
  
    describe "attributes" do
@@ -9,4 +8,5 @@ RSpec.describe Comment, type: :model do
        expect(comment).to respond_to(:body)
      end
    end
-end
+ end
+ 
