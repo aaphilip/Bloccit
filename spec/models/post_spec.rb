@@ -1,7 +1,8 @@
-require 'rails_helper'
+ require 'rails_helper'
 
-RSpec.describe Post, type: :model do
- let(:post) { Post.create!(title: "New Post Title", body: "New Post Body") }
+ RSpec.describe Post, type: :model do
+    # #1
+   let(:post) { Post.create!(title: "New Post Title", body: "New Post Body") }
  
    describe "attributes" do
  # #2
